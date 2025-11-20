@@ -11,5 +11,6 @@ resetBtn: document.querySelector('#resetBtn')
 };
 const game = new Game(ui);
 game.init(); // Skapar bräde, binder events
+window.testMole = () => game.spawnMole();
 ui.startBtn.addEventListener('click', () => game.start());
 ui.resetBtn.addEventListener('click', () => game.reset());
